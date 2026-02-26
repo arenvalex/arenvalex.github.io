@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arenvalex | Digital Web Studio</title>
+<title>Arenvalex | Performance-Driven Digital Studio</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 
 <style>
 
-*{margin:0;padding:0;box-sizing:border-box;}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
 
 body{
 font-family:'Inter',sans-serif;
 background:#0e0e10;
 color:#f5f5f5;
 line-height:1.6;
+overflow-x:hidden;
 }
 
 .container{
@@ -45,12 +46,10 @@ font-size:14px;
 transition:0.3s;
 }
 
-nav a:hover{
-color:#fff;
-}
+nav a:hover{color:#fff;}
 
 .hero{
-padding:140px 0 120px 0;
+padding:160px 0 140px 0;
 max-width:900px;
 }
 
@@ -84,49 +83,89 @@ color:#000;
 }
 
 .section{
-padding:120px 0;
+padding:140px 0;
 border-top:1px solid #1a1a1d;
 }
 
 .section h2{
-font-size:40px;
+font-size:42px;
 margin-bottom:70px;
 }
 
-.services{
+.why-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:60px;
 }
 
-.service-item h3{
-font-size:18px;
+.why-item h3{
+font-size:20px;
 margin-bottom:15px;
 }
 
-.service-item p{
+.why-item p{
+color:#888;
+font-size:15px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:50px;
+}
+
+.project-card{
+background:#151518;
+border-radius:15px;
+overflow:hidden;
+transition:0.4s;
+border:1px solid #1f1f24;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+border-color:#3b82f6;
+}
+
+.project-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+margin-bottom:12px;
+font-size:18px;
+}
+
+.project-content p{
 color:#888;
 font-size:14px;
 }
 
 .contact{
-padding:120px 0;
+padding:140px 0;
 border-top:1px solid #1a1a1d;
+text-align:center;
 }
 
 .contact h2{
-font-size:40px;
-margin-bottom:20px;
+font-size:42px;
+margin-bottom:25px;
 }
 
 .contact a{
 color:#3b82f6;
 text-decoration:none;
-font-size:20px;
+font-size:22px;
 }
 
 footer{
-padding:50px 0;
+padding:60px 0;
 text-align:center;
 color:#666;
 border-top:1px solid #1a1a1d;
@@ -147,47 +186,80 @@ font-size:14px;
 <header>
 <div class="logo">arenvalex.</div>
 <nav>
-<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#work">Work</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Digital Experiences Built for Performance</h1>
-<p>We build high-performance websites, optimize speed and user experience, and provide scalable technical solutions for modern businesses.</p>
+<h1>Performance First. Results Always.</h1>
+<p>We build scalable, high-performance websites and provide technical solutions that help businesses grow faster in the digital world.</p>
 <a href="#contact" class="btn">Start a Project</a>
 </section>
 
-<section id="services" class="section">
-<h2>Services</h2>
+<section id="why" class="section">
+<h2>Why Choose Arenvalex</h2>
 
-<div class="services">
+<div class="why-grid">
 
-<div class="service-item">
-<h3>Website Development</h3>
-<p>Custom website development, WordPress setup, landing pages and WooCommerce integration.</p>
+<div class="why-item">
+<h3>Performance Driven</h3>
+<p>Every project is optimized for speed, scalability and long-term growth.</p>
 </div>
 
-<div class="service-item">
-<h3>Technical Services</h3>
-<p>Bug fixing, website migration, SSL setup and long-term technical support.</p>
+<div class="why-item">
+<h3>Clean & Scalable Code</h3>
+<p>We build structured systems that are easy to maintain and expand.</p>
 </div>
 
-<div class="service-item">
-<h3>Performance Optimization</h3>
-<p>Speed optimization, Core Web Vitals improvements and mobile performance tuning.</p>
+<div class="why-item">
+<h3>Business Focused</h3>
+<p>Not just design — we build platforms that convert and generate revenue.</p>
 </div>
 
-<div class="service-item">
-<h3>Design & UX</h3>
-<p>Theme customization, UI improvements and responsive layout optimization.</p>
+<div class="why-item">
+<h3>Reliable Support</h3>
+<p>Ongoing technical support and optimization when you need it.</p>
+</div>
+
+</div>
+</section>
+
+<section id="work" class="section">
+<h2>Selected Work</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<img src="images/corporate.jpg" alt="Corporate Website">
+<div class="project-content">
+<h3>Corporate Website System</h3>
+<p>Modern business website with SEO structure and performance optimization.</p>
+</div>
+</div>
+
+<div class="project-card">
+<img src="images/ecommerce.jpg" alt="Commerce Platform">
+<div class="project-content">
+<h3>High-Performance Commerce Platform</h3>
+<p>Scalable WooCommerce integration with advanced speed tuning.</p>
+</div>
+</div>
+
+<div class="project-card">
+<img src="images/landing.jpg" alt="Landing Page">
+<div class="project-content">
+<h3>Conversion Focused Landing Page</h3>
+<p>Optimized single page sales system with analytics integration.</p>
+</div>
 </div>
 
 </div>
 </section>
 
 <section id="contact" class="contact">
-<h2>Let’s Work Together</h2>
+<h2>Let’s Build Something Powerful</h2>
 <a href="mailto:contact@arenvalex.com">contact@arenvalex.com</a>
 </section>
 
