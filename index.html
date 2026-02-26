@@ -193,6 +193,23 @@ font-size:14px;
 @media(max-width:900px){
 .hero h1{font-size:48px;}
 }
+
+  .contact-btn{
+display:inline-block;
+margin-top:30px;
+padding:16px 45px;
+background:#3b82f6;
+color:#fff;
+text-decoration:none;
+font-weight:600;
+border-radius:8px;
+transition:0.3s;
+}
+
+.contact-btn:hover{
+background:#2563eb;
+transform:translateY(-3px);
+}
 </style>
 </head>
 
@@ -323,7 +340,11 @@ font-size:14px;
 <section id="contact" class="contact">
 <h2>No Sales Calls. No Spam. Just Solutions.</h2>
 <p>Send your project details and receive a technical breakdown with a transparent quote within 24 hours.</p>
-<a href="mailto:contact@arenvalex.com">contact@arenvalex.com</a>
+  
+<a href="mailto:arenvalex@outlook.com" class="contact-btn">
+Start a Conversation
+</a>
+  
 </section>
 
 <footer>
@@ -338,3 +359,4 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 </body>
 </html>
+
