@@ -7,14 +7,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 
 <style>
-
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
 
 body{
 font-family:'Inter',sans-serif;
 background:#0e0e10;
 color:#f5f5f5;
-line-height:1.6;
+line-height:1.7;
 overflow-x:hidden;
 }
 
@@ -63,7 +62,7 @@ margin-bottom:40px;
 .hero p{
 font-size:20px;
 color:#aaa;
-max-width:600px;
+max-width:650px;
 margin-bottom:50px;
 }
 
@@ -89,21 +88,32 @@ border-top:1px solid #1a1a1d;
 
 .section h2{
 font-size:42px;
-margin-bottom:70px;
+margin-bottom:60px;
 }
 
-.why-grid{
+.section p{
+max-width:900px;
+color:#aaa;
+font-size:18px;
+margin-bottom:25px;
+}
+
+.why-grid, .deep-grid, .roadmap-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:60px;
 }
 
-.why-item h3{
+.why-item h3,
+.deep-item h3,
+.roadmap-item h3{
 font-size:20px;
 margin-bottom:15px;
 }
 
-.why-item p{
+.why-item p,
+.deep-item p,
+.roadmap-item p{
 color:#888;
 font-size:15px;
 }
@@ -148,7 +158,7 @@ font-size:14px;
 }
 
 .contact{
-padding:140px 0;
+padding:160px 0;
 border-top:1px solid #1a1a1d;
 text-align:center;
 }
@@ -156,6 +166,14 @@ text-align:center;
 .contact h2{
 font-size:42px;
 margin-bottom:25px;
+}
+
+.contact p{
+max-width:800px;
+margin:auto;
+color:#aaa;
+font-size:18px;
+margin-bottom:30px;
 }
 
 .contact a{
@@ -175,7 +193,6 @@ font-size:14px;
 @media(max-width:900px){
 .hero h1{font-size:48px;}
 }
-
 </style>
 </head>
 
@@ -194,48 +211,44 @@ font-size:14px;
 
 <section class="hero">
 <h1>Performance First. Results Always.</h1>
-<p>We build scalable, high-performance websites and provide technical solutions that help businesses grow faster in the digital world.</p>
+<p>We build scalable, high-performance websites and provide technical solutions that eliminate friction and accelerate growth.</p>
 <a href="#contact" class="btn">Start a Project</a>
 </section>
 
 <section id="why" class="section">
-<h2>Why Choose Arenvalex</h2>
+<h2>Engineering Digital Excellence</h2>
+<p>At Arenvalex, we don't just install websites — we engineer digital assets built for longevity. In a world where a 1-second delay can reduce conversions by up to 20%, having a “working” website is no longer enough.</p>
+<p>Our methodology blends technical precision with strategic thinking. Whether migrating infrastructure or optimizing Core Web Vitals, our mission remains the same: removing technical friction so your business can scale.</p>
 
 <div class="why-grid">
-
 <div class="why-item">
 <h3>Performance Driven</h3>
-<p>Every project is optimized for speed, scalability and long-term growth.</p>
+<p>Speed, scalability and long-term sustainability are engineered into every project.</p>
 </div>
-
 <div class="why-item">
-<h3>Clean & Scalable Code</h3>
-<p>We build structured systems that are easy to maintain and expand.</p>
+<h3>Clean Architecture</h3>
+<p>Structured, maintainable systems designed for growth and expansion.</p>
 </div>
-
 <div class="why-item">
 <h3>Business Focused</h3>
-<p>Not just design — we build platforms that convert and generate revenue.</p>
+<p>Platforms built not just to look good — but to convert.</p>
 </div>
-
 <div class="why-item">
 <h3>Reliable Support</h3>
-<p>Ongoing technical support and optimization when you need it.</p>
+<p>Ongoing technical backing when it matters most.</p>
 </div>
-
 </div>
 </section>
 
 <section id="work" class="section">
 <h2>Selected Work</h2>
-
 <div class="projects">
 
 <div class="project-card">
 <img src="images/corporate.jpg" alt="Corporate Website">
 <div class="project-content">
 <h3>Corporate Website System</h3>
-<p>Modern business website with SEO structure and performance optimization.</p>
+<p>SEO structured, performance-optimized digital presence for modern businesses.</p>
 </div>
 </div>
 
@@ -243,23 +256,73 @@ font-size:14px;
 <img src="images/ecommerce.jpg" alt="Commerce Platform">
 <div class="project-content">
 <h3>High-Performance Commerce Platform</h3>
-<p>Scalable WooCommerce integration with advanced speed tuning.</p>
+<p>WooCommerce integration with advanced optimization and UX refinement.</p>
 </div>
 </div>
 
 <div class="project-card">
 <img src="images/landing.jpg" alt="Landing Page">
 <div class="project-content">
-<h3>Conversion Focused Landing Page</h3>
-<p>Optimized single page sales system with analytics integration.</p>
+<h3>Conversion-Focused Landing System</h3>
+<p>High-impact single page architecture engineered for measurable growth.</p>
 </div>
 </div>
 
 </div>
 </section>
 
+<section class="section">
+<h2>Services – Deep Dive</h2>
+<div class="deep-grid">
+
+<div class="deep-item">
+<h3>🚀 Performance Optimization</h3>
+<p>Database refinement, CSS/JS minification, rendering optimization and advanced speed tuning.</p>
+</div>
+
+<div class="deep-item">
+<h3>🛠 Technical Infrastructure</h3>
+<p>Server migration, SSL implementation, DNS management and backend stabilization.</p>
+</div>
+
+<div class="deep-item">
+<h3>🎨 UI/UX Engineering</h3>
+<p>Responsive architecture and structured interface refinement beyond drag-and-drop limits.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>The Roadmap</h2>
+<div class="roadmap-grid">
+
+<div class="roadmap-item">
+<h3>1. Discovery & Audit</h3>
+<p>Identifying bottlenecks and structural opportunities.</p>
+</div>
+
+<div class="roadmap-item">
+<h3>2. Strategic Implementation</h3>
+<p>Engineering, optimization and infrastructure hardening.</p>
+</div>
+
+<div class="roadmap-item">
+<h3>3. Quality Assurance</h3>
+<p>Multi-device stress testing and validation before launch.</p>
+</div>
+
+<div class="roadmap-item">
+<h3>4. Launch & Support</h3>
+<p>Long-term stability with ongoing technical partnership.</p>
+</div>
+
+</div>
+</section>
+
 <section id="contact" class="contact">
-<h2>Let’s Build Something Powerful</h2>
+<h2>No Sales Calls. No Spam. Just Solutions.</h2>
+<p>Send your project details and receive a technical breakdown with a transparent quote within 24 hours.</p>
 <a href="mailto:contact@arenvalex.com">contact@arenvalex.com</a>
 </section>
 
